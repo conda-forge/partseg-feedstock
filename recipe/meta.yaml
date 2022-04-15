@@ -32,7 +32,7 @@ requirements:
     - magicgui >=0.3.3
     - mahotas >=1.4.9
     - napari >=0.4.8
-    - nme >= 0.1.4
+    - nme >=0.1.4
     - numpy >=1.18.0
     - oiffile >=2019.1.1
     - openpyxl >=2.4.9
