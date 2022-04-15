@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.13.15" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PartSeg-{{ version }}.tar.gz
-  sha256: f5619cfb1989635026b824110655fa7427de706d7232d183958ab94fb8108503
+  sha256: c4608222d8357acb741f18b59272816a10a4c4d643549fa80c2617b2059d6e80
 
 build:
   skip: true  # [py<38]
@@ -32,6 +32,7 @@ requirements:
     - magicgui >=0.3.3
     - mahotas >=1.4.9
     - napari >=0.4.8
+    - nme >=0.1.4
     - numpy >=1.18.0
     - oiffile >=2019.1.1
     - openpyxl >=2.4.9
@@ -51,6 +52,7 @@ requirements:
     - superqt >=0.2.4
     - sympy >=1.1.1
     - tifffile >=2020.9.30
+    - traceback-with-variables >=2.0.4
     - typing-extensions >=3.7.4.3  # [py<38]
     - vispy >=0.6.4
     - xlrd >=1.1.0
