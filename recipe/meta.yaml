@@ -52,6 +52,7 @@ requirements:
     - superqt >=0.2.4
     - sympy >=1.1.1
     - tifffile >=2020.9.30
+    - traceback-with-variables >=2.0.4
     - typing-extensions >=3.7.4.3  # [py<38]
     - vispy >=0.6.4
     - xlrd >=1.1.0
