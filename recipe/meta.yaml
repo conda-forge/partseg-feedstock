@@ -29,6 +29,8 @@ requirements:
     - h5py >=2.8.0
     - imagecodecs >=2020.5.30
     - imageio >=2.5.0
+    - ipykernel >= 5.2.0
+    - ipython >= 7.7.0
     - magicgui >=0.3.3
     - mahotas >=1.4.9
     - napari >=0.4.8
@@ -41,6 +43,7 @@ requirements:
     - partsegcore-compiled-backend >=0.13.11
     - partsegdata ==0.10.0
     - psygnal >=0.2.0
+    - pydatntic >= 1.6.1
     - python
     - qtawesome >=1.0.3
     - qtpy >=1.7.0
