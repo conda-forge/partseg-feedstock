@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.14.2" %}
+{% set version = "0.14.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PartSeg-{{ version }}.tar.gz
-  sha256: 406d05084fd203ddf94703f8b6a0a256a0239b9d493324c8a758e2b91825ce48
+  sha256: 1a04b5cd54847dd200483535d50a389ca713163df42bc6769cb8eb9f28ab6a3d
 
 build:
   skip: true  # [py<38]
@@ -29,6 +29,8 @@ requirements:
     - h5py >=2.8.0
     - imagecodecs >=2020.5.30
     - imageio >=2.5.0
+    - ipykernel >=5.2.0
+    - ipython >=7.7.0
     - magicgui >=0.3.3
     - mahotas >=1.4.9
     - napari >=0.4.8
@@ -41,6 +43,7 @@ requirements:
     - partsegcore-compiled-backend >=0.13.11
     - partsegdata ==0.10.0
     - psygnal >=0.2.0
+    - pydantic >=1.6.1
     - python
     - qtawesome >=1.0.3
     - qtpy >=1.7.0
