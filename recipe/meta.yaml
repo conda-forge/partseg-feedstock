@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.14.3" %}
+{% set version = "0.14.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PartSeg-{{ version }}.tar.gz
-  sha256: 1a04b5cd54847dd200483535d50a389ca713163df42bc6769cb8eb9f28ab6a3d
+  sha256: 277424eaf9c21a1423c0ac187f3fb725442d146a5e290774842b57260ee15572
 
 build:
   skip: true  # [py<38]
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -34,7 +34,7 @@ requirements:
     - magicgui >=0.3.3
     - mahotas >=1.4.9
     - napari >=0.4.8
-    - nme >=0.1.4
+    - nme >=0.1.6
     - numpy >=1.18.0
     - oiffile >=2019.1.1
     - openpyxl >=2.4.9
@@ -45,7 +45,7 @@ requirements:
     - psygnal >=0.2.0
     - pydantic >=1.6.1
     - python
-    - qtawesome >=1.0.3
+    - qtawesome >=1.0.3, !=1.2.0
     - qtpy >=1.7.0
     - requests >=2.18.0
     - scipy >=1.2.0
