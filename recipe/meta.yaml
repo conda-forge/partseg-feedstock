@@ -34,7 +34,7 @@ requirements:
     - magicgui >=0.3.3
     - mahotas >=1.4.9
     - napari >=0.4.8
-    - nme >=0.1.4
+    - nme >=0.1.6
     - numpy >=1.18.0
     - oiffile >=2019.1.1
     - openpyxl >=2.4.9
@@ -45,7 +45,7 @@ requirements:
     - psygnal >=0.2.0
     - pydantic >=1.6.1
     - python
-    - qtawesome >=1.0.3
+    - qtawesome >=1.0.3, !=1.2.0
     - qtpy >=1.7.0
     - requests >=2.18.0
     - scipy >=1.2.0
