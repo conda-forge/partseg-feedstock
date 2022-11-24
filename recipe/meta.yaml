@@ -10,7 +10,7 @@ source:
   sha256: 505b53bc41e7f67b7c2fd5b5840c601f6a9ce6633b2965540e9af8f299926bec
 
 build:
-  skip: true  # [py<38]
+  skip: true  # [py<37]
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
