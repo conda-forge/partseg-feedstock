@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.14.6" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PartSeg-{{ version }}.tar.gz
-  sha256: 505b53bc41e7f67b7c2fd5b5840c601f6a9ce6633b2965540e9af8f299926bec
+  sha256: 31e20cbcd5bf2f4a593655eb3d84f54a9e6feb323c9ff9f7928d650dfc8ff0a8
 
 build:
   skip: true  # [py<37]
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
