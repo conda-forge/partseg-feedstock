@@ -1,11 +1,11 @@
-About partseg
-=============
+About partseg-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/partseg-feedstock/blob/main/LICENSE.txt)
 
 Home: https://4dnucleome.cent.uw.edu.pl/PartSeg/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/partseg-feedstock/blob/main/LICENSE.txt)
 
 Summary: PartSeg is python GUI and set of napari plugins for bio imaging analysis especially nucleus analysis,
 

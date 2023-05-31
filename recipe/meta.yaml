@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.14.6" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PartSeg-{{ version }}.tar.gz
-  sha256: 505b53bc41e7f67b7c2fd5b5840c601f6a9ce6633b2965540e9af8f299926bec
+  sha256: 31e20cbcd5bf2f4a593655eb3d84f54a9e6feb323c9ff9f7928d650dfc8ff0a8
 
 build:
   skip: true  # [py<37]
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -26,41 +26,45 @@ requirements:
     - appdirs >=1.4.4
     - czifile >=2019.5.22
     - defusedxml >=0.6.0
-    - h5py >=2.8.0
+    - fonticon-fontawesome6 >=6.4.0
+    - h5py >=3.3.0
     - imagecodecs >=2020.5.30
     - imageio >=2.5.0
     - ipykernel >=5.2.0
     - ipython >=7.7.0
-    - magicgui >=0.3.3
+    - local-migrator >=0.1.7
+    - magicgui >=0.4.0
     - mahotas >=1.4.9
-    - napari >=0.4.8
-    - nme >=0.1.6
-    - numpy >=1.18.0
-    - oiffile >=2019.1.1  # [py>=38]
+    - napari >=0.4.14
+    - nme >=0.1.7
+    - numpy >=1.18.5
+    - oiffile >=2020.1.18  # [py>=38]
     - oiffile <=2021.6.6  # [py<38]
-    - openpyxl >=2.4.9
+    - openpyxl >=2.5.7
     - packaging >=20.0
-    - pandas >=0.24.0
+    - pandas >=1.1.0
     - partsegcore-compiled-backend >=0.13.11
     - partsegdata ==0.10.0
-    - psygnal >=0.2.0
-    - pydantic >=1.6.1
+    - psygnal >=0.3.1
+    - pydantic >=1.8.1
+    - pygments >=2.4.0
     - python
     - qtawesome >=1.0.3, !=1.2.0
+    - qtconsole >=4.7.7
     - qtpy >=1.7.0
     - requests >=2.18.0
-    - scipy >=1.2.0
+    - scipy >=1.4.1
     - sentry-sdk >=0.14.3
-    - simpleitk >=1.1.0
+    - simpleitk >=2.0.0
     - six >=1.11.0
-    - superqt >=0.2.4
+    - superqt >=0.3.0
     - sympy >=1.1.1
     - tifffile >=2020.9.30
     - traceback-with-variables >=2.0.4
     - typing-extensions >=3.7.4.3  # [py<38]
-    - vispy >=0.6.4
+    - vispy >=0.9.4
     - xlrd >=1.1.0
-    - xlsxwriter
+    - xlsxwriter >=2.0.0
 
 test:
   imports:
