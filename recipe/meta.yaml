@@ -26,13 +26,13 @@ requirements:
     - appdirs >=1.4.4
     - czifile >=2019.5.22
     - defusedxml >=0.6.0
-    - fonticon-fontawesome6 >= 6.4.0
+    - fonticon-fontawesome6 >=6.4.0
     - h5py >=3.3.0
     - imagecodecs >=2020.5.30
     - imageio >=2.5.0
     - ipykernel >=5.2.0
     - ipython >=7.7.0
-    - local-migrator >= 0.1.7
+    - local-migrator >=0.1.7
     - magicgui >=0.4.0
     - mahotas >=1.4.9
     - napari >=0.4.14
@@ -47,10 +47,10 @@ requirements:
     - partsegdata ==0.10.0
     - psygnal >=0.3.1
     - pydantic >=1.8.1
-    - pygments >= 2.4.0
+    - pygments >=2.4.0
     - python
     - qtawesome >=1.0.3, !=1.2.0
-    - qtconsole >= 4.7.7
+    - qtconsole >=4.7.7
     - qtpy >=1.7.0
     - requests >=2.18.0
     - scipy >=1.4.1
@@ -64,7 +64,7 @@ requirements:
     - typing-extensions >=3.7.4.3  # [py<38]
     - vispy >=0.9.4
     - xlrd >=1.1.0
-    - xlsxwriter >= 2.0.0
+    - xlsxwriter >=2.0.0
 
 test:
   imports:
