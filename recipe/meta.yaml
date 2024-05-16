@@ -10,7 +10,7 @@ source:
   sha256: 91955e328dcc8404f800904750a40bd368a964635d7c76647b8678555d1fefb2
 
 build:
-  skip: true
+  noarch: python
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
