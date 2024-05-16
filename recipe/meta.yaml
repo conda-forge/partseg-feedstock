@@ -14,13 +14,13 @@ build:
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - python
-    - setuptools-scm >=3.4
+    - setuptools-scm >=8
     - setuptools-scm
   run:
     - appdirs >=1.4.4
@@ -38,8 +38,7 @@ requirements:
     - napari >=0.4.14
     - nme >=0.1.7
     - numpy >=1.18.5
-    - oiffile >=2020.1.18  # [py>=38]
-    - oiffile <=2021.6.6  # [py<38]
+    - oiffile >=2020.1.18
     - openpyxl >=2.5.7
     - packaging >=20.0
     - pandas >=1.1.0
@@ -61,7 +60,6 @@ requirements:
     - sympy >=1.1.1
     - tifffile >=2020.9.30
     - traceback-with-variables >=2.0.4
-    - typing-extensions >=3.7.4.3  # [py<38]
     - vispy >=0.9.4
     - xlrd >=1.1.0
     - xlsxwriter >=2.0.0
