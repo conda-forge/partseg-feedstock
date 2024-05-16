@@ -15,7 +15,13 @@ Current build status
 ====================
 
 
-<table>
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15837&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/partseg-feedstock?branchName=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
