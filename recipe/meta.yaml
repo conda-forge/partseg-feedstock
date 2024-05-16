@@ -10,7 +10,7 @@ source:
   sha256: 91955e328dcc8404f800904750a40bd368a964635d7c76647b8678555d1fefb2
 
 build:
-  skip: true  # [py<37]
+  skip: true
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >= 3.8
     - setuptools-scm >=8
     - setuptools-scm
   run:
@@ -47,7 +47,7 @@ requirements:
     - psygnal >=0.3.1
     - pydantic >=1.8.1, <2
     - pygments >=2.4.0
-    - python
+    - python >= 3.8
     - qtawesome >=1.0.3, !=1.2.0
     - qtconsole >=4.7.7
     - qtpy >=1.7.0
