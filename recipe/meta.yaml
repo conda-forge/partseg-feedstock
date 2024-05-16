@@ -10,17 +10,17 @@ source:
   sha256: 91955e328dcc8404f800904750a40bd368a964635d7c76647b8678555d1fefb2
 
 build:
-  skip: true  # [py<37]
+  noarch: python
   entry_points:
     - PartSeg = PartSeg.launcher_main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python
-    - setuptools-scm >=3.4
+    - python >=3.8
+    - setuptools-scm >=8
     - setuptools-scm
   run:
     - appdirs >=1.4.4
@@ -38,17 +38,16 @@ requirements:
     - napari >=0.4.14
     - nme >=0.1.7
     - numpy >=1.18.5
-    - oiffile >=2020.1.18  # [py>=38]
-    - oiffile <=2021.6.6  # [py<38]
+    - oiffile >=2020.1.18
     - openpyxl >=2.5.7
     - packaging >=20.0
     - pandas >=1.1.0
     - partsegcore-compiled-backend >=0.13.11
     - partsegdata ==0.10.0
     - psygnal >=0.3.1
-    - pydantic >=1.8.1
+    - pydantic >=1.8.1, <2
     - pygments >=2.4.0
-    - python
+    - python >=3.8
     - qtawesome >=1.0.3, !=1.2.0
     - qtconsole >=4.7.7
     - qtpy >=1.7.0
@@ -61,7 +60,6 @@ requirements:
     - sympy >=1.1.1
     - tifffile >=2020.9.30
     - traceback-with-variables >=2.0.4
-    - typing-extensions >=3.7.4.3  # [py<38]
     - vispy >=0.9.4
     - xlrd >=1.1.0
     - xlsxwriter >=2.0.0
