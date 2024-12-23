@@ -74,8 +74,8 @@ test:
     - pip check
     - PartSeg --help
   requires:
-    - pip
     - python {{ python_min }}
+    - pip
 
 about:
   home: https://4dnucleome.cent.uw.edu.pl/PartSeg/
