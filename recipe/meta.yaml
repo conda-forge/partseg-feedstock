@@ -1,13 +1,13 @@
 {% set name = "PartSeg" %}
-{% set version = "0.15.4" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 93100ae9c15e197537c828b59d127e8085234ae64147ea634852879c5c875fd6
+  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: 4e6a3fb94b50c0e220f2e7d8fc360808df92965b7339c478804b9719fd2f1674
 
 build:
   noarch: python
@@ -19,9 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm >=8
-    - setuptools-scm
+    - setuptools
   run:
     - appdirs >=1.4.4
     - czifile >=2019.5.22
@@ -47,7 +47,7 @@ requirements:
     - psygnal >=0.3.1
     - pydantic >=1.8.1, <2
     - pygments >=2.4.0
-    - python >=3.8
+    - python >={{ python_min }}
     - qtawesome >=1.0.3, !=1.2.0
     - qtconsole >=4.7.7
     - qtpy >=1.7.0
@@ -74,6 +74,7 @@ test:
     - pip check
     - PartSeg --help
   requires:
+    - python 3.10
     - pip
 
 about:
