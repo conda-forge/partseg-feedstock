@@ -45,10 +45,10 @@ requirements:
     - partsegcore-compiled-backend >=0.13.11
     - partsegdata ==0.10.0
     - psygnal >=0.3.1
-    - pydantic >=1.8.1, <2
+    - pydantic >=1.8.1
     - pygments >=2.4.0
     - python >={{ python_min }}
-    - qtawesome >=1.0.3, !=1.2.0
+    - qtawesome >=1.0.3 !=1.2.0
     - qtconsole >=4.7.7
     - qtpy >=1.7.0
     - requests >=2.18.0
