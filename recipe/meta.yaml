@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 4e6a3fb94b50c0e220f2e7d8fc360808df92965b7339c478804b9719fd2f1674
+  sha256: 9fb5d6e114a368c94806a751b9c826c44d54d962b2fd974cc257525178e15c4a
 
 build:
   noarch: python
@@ -45,7 +45,7 @@ requirements:
     - partsegcore-compiled-backend >=0.13.11
     - partsegdata ==0.10.0
     - psygnal >=0.3.1
-    - pydantic >=1.8.1, <2
+    - pydantic >=1.8.1
     - pygments >=2.4.0
     - python >={{ python_min }}
     - qtawesome >=1.0.3, !=1.2.0
