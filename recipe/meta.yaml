@@ -1,5 +1,5 @@
 {% set name = "PartSeg" %}
-{% set version = "0.16.3" %}
+{% set version = "0.16.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: e4b7caca029acb23dcddb78e632954f7231edfa91709e81f8751eeb6dfb9f549
+  sha256: a8047eaf5e4cf3a065a078ad2d62739d13f417274e6e0e76603e51f2b9b1936e
 
 build:
   noarch: python
